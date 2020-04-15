@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+         // <!-- A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+    // A mensagem "Reprovado", se a média for menor do que sete;
+    // A mensagem "Aprovado com Distinção", se a média for igual a dez. -->
+
+    const fruta = prompt('Digite a fruta desejada');
+    switch (fruta) {
+      case 'maçã':
+        console.log('Não vdendemos esta fruta aqui');
+        break;
+      case 'kiwi':
+        console.log('Estamos com escassez de kiwis');
+        break;
+      case 'melancia':
+        console.log('Aqui está, são 3 reais o quilo');
+        break;
+      default:
+        console.log('error');
+    }
+
+    const mes = prompt('Digite um número para saber o mês correspondente');
+    let nomeDoMes;
+
+    switch (mes) {
+      case '1':
+        nomeDoMes = "Janeiro";
+        break;
+      case '2':
+        nomeDoMes = "Fevereiro";
+        break;
+      case '3':
+        nomeDoMes = "Março";
+        break;
+      case '4':
+        nomeDoMes = "Abril";
+        break;
+      case '5':
+        nomeDoMes = "Maio";
+        break;
+      case '6':
+        nomeDoMes = "Junho";
+        break;
+      case '7':
+        nomeDoMes = "Julho";
+        break;
+      case '8':
+        nomeDoMes = "Agosto";
+        break;
+      case '9':
+        nomeDoMes = "Setembro";
+        break;
+      case '10':
+        nomeDoMes = "Outubro";
+        break;
+      case '11':
+        nomeDoMes = "Novembro";
+        break;
+      case '12':
+        nomeDoMes = "Dezembro";
+        break;
+      default:
+        nomeDoMes = "Incorreto";
+    }
+
+    console.log(nomeDoMes);
+
+    // 3. Calcule o valor do salario do dev conforme valores abaixos.
+    //     salario Base: R$ 2.500,00
+    //     salario Junior = salario base + 20%
+    //     salario Pleno = salario base + 35%
+    //     salario senior = salario base + 50% 
+
+    const cargo = prompt('Digite o seu cargo para saber o valor do seu salário');
+    let salarioBase = 2500;
+    const salarioJunior = 500;
+    const salarioPleno = 875;
+    const salarioSenior = 1250;
+
+    switch (cargo) {
+      case 'Júnior':
+        salarioBase += salarioJunior;
+        break;
+      case 'Pleno':
+        salarioBase += salarioPleno;
+        break;
+      case 'Senior':
+        salarioBase += salarioSenior;
+        break;
+      default:
+        salarioBase = "Cargo não registrado no sistema";
+    }
+
+    console.log(salarioBase);
+    </script>
+    
+</body>
+</html>

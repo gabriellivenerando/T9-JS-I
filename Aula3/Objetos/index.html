@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+   
+
+    // 1. Crie um Objeto pessoa que receba as propriedades: nome, telefone, idade, altura e peso.
+
+    let pessoa = {
+      nome: 'Gabrielli',
+      telefone: 58519074,
+      idade: 24,
+      altura: 1.70,
+      peso: 75,
+    }
+
+    let pessoa = new Object();
+    pessoa.nome='Gabrielli',
+    pessoa.telefone = 58519075,
+    pessoa.idade = 24,
+    pessoa.altura = 1.75,
+    pessoa.peso = 75
+
+      console.log(pessoa)
+
+    // para acessar a propriedade pessoa["nome"]
+    // 2. Crie um objeto animal que receba as propriedades: porte(pequeno, médio ou grande), especie, raça.
+
+    let animal ={
+      porte: 'pequeno',
+      especie: 'felina',
+      raça:'bengal'
+    }
+
+    //OU
+
+    let animal = new Object();
+    animal.porte = 'pequeno';
+    animal.especie ='felina';
+    animal.raca = 'bengal'
+
+    console.log(animal);
+
+
+    // 3. Crie um objeto curso que receba as propriedades: nome, período, professor(a).  
+
+    let curso ={
+      nome: 'reprograma',
+      periodo: 'integral',
+      professora: 'Bruna'
+    }
+
+      //OU
+
+    let curso = new Object({nome: 'reprograma', periodo: 'integral', professora: 'Bruna' })
+
+    console.log(curso);
+  </script>
+</body>
+
+</html>
